@@ -1,0 +1,330 @@
+{
+  "context_manager": {},
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "raw_data": false,
+  "info": {
+    "vrf": {
+      "default": {
+        "address_family": {
+          "ipv4": {
+            "instance": {
+              "1": {
+                "router_id": "192.168.130.10",
+                "preference": {
+                  "single_value": {
+                    "all": 110
+                  }
+                },
+                "mpls": {
+                  "ldp": {
+                    "autoconfig": false,
+                    "autoconfig_area_id": "0.0.0.0"
+                  }
+                },
+                "areas": {
+                  "0.0.0.0": {
+                    "mpls": {
+                      "te": {
+                        "enable": false
+                      }
+                    },
+                    "database": {
+                      "lsa_types": {
+                        "1": {
+                          "lsa_type": 1,
+                          "lsas": {
+                            "192.168.130.13 192.168.130.13": {
+                              "lsa_id": "192.168.130.13",
+                              "adv_router": "192.168.130.13",
+                              "ospfv2": {
+                                "header": {
+                                  "option": "None",
+                                  "lsa_id": "192.168.130.13",
+                                  "age": 707,
+                                  "type": 1,
+                                  "adv_router": "192.168.130.13",
+                                  "seq_num": "80000011",
+                                  "checksum": "0x3B04",
+                                  "length": 36
+                                },
+                                "body": {
+                                  "router": {
+                                    "num_of_links": 1,
+                                    "links": {
+                                      "192.168.130.13": {
+                                        "link_id": "192.168.130.13",
+                                        "link_data": "192.168.130.13",
+                                        "type": "transit network",
+                                        "topologies": {
+                                          "0": {
+                                            "mt_id": 0,
+                                            "metric": 1
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "192.168.130.12 192.168.130.12": {
+                              "lsa_id": "192.168.130.12",
+                              "adv_router": "192.168.130.12",
+                              "ospfv2": {
+                                "header": {
+                                  "option": "None",
+                                  "lsa_id": "192.168.130.12",
+                                  "age": 871,
+                                  "type": 1,
+                                  "adv_router": "192.168.130.12",
+                                  "seq_num": "80000011",
+                                  "checksum": "0x3D05",
+                                  "length": 36
+                                },
+                                "body": {
+                                  "router": {
+                                    "num_of_links": 1,
+                                    "links": {
+                                      "192.168.130.13": {
+                                        "link_id": "192.168.130.13",
+                                        "link_data": "192.168.130.12",
+                                        "type": "transit network",
+                                        "topologies": {
+                                          "0": {
+                                            "mt_id": 0,
+                                            "metric": 1
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "192.168.130.11 192.168.130.11": {
+                              "lsa_id": "192.168.130.11",
+                              "adv_router": "192.168.130.11",
+                              "ospfv2": {
+                                "header": {
+                                  "option": "None",
+                                  "lsa_id": "192.168.130.11",
+                                  "age": 782,
+                                  "type": 1,
+                                  "adv_router": "192.168.130.11",
+                                  "seq_num": "80000011",
+                                  "checksum": "0x3F06",
+                                  "length": 36
+                                },
+                                "body": {
+                                  "router": {
+                                    "num_of_links": 1,
+                                    "links": {
+                                      "192.168.130.13": {
+                                        "link_id": "192.168.130.13",
+                                        "link_data": "192.168.130.11",
+                                        "type": "transit network",
+                                        "topologies": {
+                                          "0": {
+                                            "mt_id": 0,
+                                            "metric": 1
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "192.168.130.10 192.168.130.10": {
+                              "lsa_id": "192.168.130.10",
+                              "adv_router": "192.168.130.10",
+                              "ospfv2": {
+                                "header": {
+                                  "option": "None",
+                                  "lsa_id": "192.168.130.10",
+                                  "age": 1019,
+                                  "type": 1,
+                                  "adv_router": "192.168.130.10",
+                                  "seq_num": "80000011",
+                                  "checksum": "0x4107",
+                                  "length": 36
+                                },
+                                "body": {
+                                  "router": {
+                                    "num_of_links": 1,
+                                    "links": {
+                                      "192.168.130.13": {
+                                        "link_id": "192.168.130.13",
+                                        "link_data": "192.168.130.10",
+                                        "type": "transit network",
+                                        "topologies": {
+                                          "0": {
+                                            "mt_id": 0,
+                                            "metric": 1
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "2": {
+                          "lsa_type": 2,
+                          "lsas": {
+                            "192.168.130.13 192.168.130.13": {
+                              "lsa_id": "192.168.130.13",
+                              "adv_router": "192.168.130.13",
+                              "ospfv2": {
+                                "header": {
+                                  "option": "None",
+                                  "lsa_id": "192.168.130.13",
+                                  "age": 707,
+                                  "type": 2,
+                                  "adv_router": "192.168.130.13",
+                                  "seq_num": "80000011",
+                                  "checksum": "0x55FC",
+                                  "length": 40
+                                },
+                                "body": {
+                                  "network": {
+                                    "network_mask": "255.255.255.0",
+                                    "attached_routers": {
+                                      "192.168.130.13": {},
+                                      "192.168.130.10": {},
+                                      "192.168.130.11": {},
+                                      "192.168.130.12": {}
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "area_id": "0.0.0.0",
+                    "area_type": "normal",
+                    "statistics": {
+                      "spf_runs_count": 3,
+                      "area_scope_lsa_count": 5,
+                      "area_scope_lsa_cksum_sum": "0x014E12"
+                    },
+                    "interfaces": {
+                      "GigabitEthernet0/0": {
+                        "name": "GigabitEthernet0/0",
+                        "interface_type": "broadcast",
+                        "passive": false,
+                        "demand_circuit": false,
+                        "priority": 1,
+                        "transmit_delay": 1,
+                        "bfd": {
+                          "enable": false
+                        },
+                        "hello_interval": 10,
+                        "dead_interval": 40,
+                        "retransmit_interval": 5,
+                        "lls": true,
+                        "enable": true,
+                        "cost": 1,
+                        "state": "drother",
+                        "hello_timer": "00:00:09",
+                        "dr_router_id": "192.168.130.13",
+                        "dr_ip_addr": "192.168.130.13",
+                        "bdr_router_id": "192.168.130.12",
+                        "bdr_ip_addr": "192.168.130.12",
+                        "neighbors": {
+                          "192.168.130.13": {
+                            "neighbor_router_id": "192.168.130.13",
+                            "address": "192.168.130.13",
+                            "dr_ip_addr": "192.168.130.13",
+                            "bdr_ip_addr": "192.168.130.12",
+                            "state": "full",
+                            "dead_timer": "00:00:33",
+                            "statistics": {
+                              "nbr_event_count": 6,
+                              "nbr_retrans_qlen": 0
+                            }
+                          },
+                          "192.168.130.12": {
+                            "neighbor_router_id": "192.168.130.12",
+                            "address": "192.168.130.12",
+                            "dr_ip_addr": "192.168.130.13",
+                            "bdr_ip_addr": "192.168.130.12",
+                            "state": "full",
+                            "dead_timer": "00:00:33",
+                            "statistics": {
+                              "nbr_event_count": 6,
+                              "nbr_retrans_qlen": 0
+                            }
+                          },
+                          "192.168.130.11": {
+                            "neighbor_router_id": "192.168.130.11",
+                            "address": "192.168.130.11",
+                            "dr_ip_addr": "192.168.130.13",
+                            "bdr_ip_addr": "192.168.130.12",
+                            "state": "2way",
+                            "dead_timer": "00:00:33",
+                            "statistics": {
+                              "nbr_event_count": 2,
+                              "nbr_retrans_qlen": 0
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "nsr": {
+                  "enable": false
+                },
+                "graceful_restart": {
+                  "cisco": {
+                    "enable": false,
+                    "type": "cisco"
+                  },
+                  "ietf": {
+                    "enable": false,
+                    "type": "ietf"
+                  }
+                },
+                "auto_cost": {
+                  "enable": false
+                },
+                "spf_control": {
+                  "paths": 4,
+                  "throttle": {
+                    "spf": {
+                      "start": 5000,
+                      "hold": 10000,
+                      "maximum": 10000
+                    }
+                  }
+                },
+                "stub_router": {
+                  "always": {
+                    "always": false,
+                    "include_stub": false,
+                    "summary_lsa": false,
+                    "external_lsa": false
+                  }
+                },
+                "bfd": {
+                  "enable": false
+                },
+                "adjacency_stagger": {
+                  "initial_number": 300,
+                  "maximum_number": 300
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

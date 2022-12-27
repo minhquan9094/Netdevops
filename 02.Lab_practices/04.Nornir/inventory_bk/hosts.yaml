@@ -1,0 +1,8 @@
+---
+rtr1:
+    hostname: 172.16.107.134
+    groups:
+        - cisco_group
+    data:
+        site: HQ
+        dc: HQ

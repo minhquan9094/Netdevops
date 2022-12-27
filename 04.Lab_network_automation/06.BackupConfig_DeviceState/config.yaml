@@ -1,0 +1,13 @@
+---
+
+inventory:
+    plugin: SimpleInventory
+    options:
+        host_file: "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/inventory/hosts.yaml"
+        group_file: "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/inventory/groups.yaml"
+        defaults_file: "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/inventory/defaults.yaml"
+
+runner:
+    plugin: threaded
+    options:
+        num_workers: 10

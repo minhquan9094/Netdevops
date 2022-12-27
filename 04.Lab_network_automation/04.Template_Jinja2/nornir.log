@@ -1,0 +1,720 @@
+2022-12-03 14:33:47,222 -  nornir.core -     INFO -        run() - Running task 'check_template' with args {} on 4 hosts
+2022-12-03 14:33:47,223 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 42, in template_file
+    t = env.get_template(template)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: ospf.j2
+
+2022-12-03 14:33:47,224 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 42, in template_file
+    t = env.get_template(template)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: ospf.j2
+
+2022-12-03 14:33:47,224 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 42, in template_file
+    t = env.get_template(template)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: ospf.j2
+
+2022-12-03 14:33:47,224 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 42, in template_file
+    t = env.get_template(template)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: ospf.j2
+
+2022-12-03 14:33:47,224 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:33:47,224 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:33:47,224 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:33:47,225 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:39:14,578 -  nornir.core -     INFO -        run() - Running task 'check_template' with args {} on 4 hosts
+2022-12-03 14:39:14,589 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'nornir.core.inventory.Host object' has no attribute 'ospf'
+
+2022-12-03 14:39:14,589 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'nornir.core.inventory.Host object' has no attribute 'ospf'
+
+2022-12-03 14:39:14,589 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'nornir.core.inventory.Host object' has no attribute 'ospf'
+
+2022-12-03 14:39:14,589 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'nornir.core.inventory.Host object' has no attribute 'ospf'
+
+2022-12-03 14:39:14,590 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:39:14,590 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:39:14,590 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:39:14,590 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:41:08,477 -  nornir.core -     INFO -        run() - Running task 'check_template' with args {} on 4 hosts
+2022-12-03 14:41:08,488 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'nornir.core.inventory.Host object' has no attribute 'ospf'
+
+2022-12-03 14:41:08,488 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'nornir.core.inventory.Host object' has no attribute 'ospf'
+
+2022-12-03 14:41:08,488 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'nornir.core.inventory.Host object' has no attribute 'ospf'
+
+2022-12-03 14:41:08,489 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'nornir.core.inventory.Host object' has no attribute 'ospf'
+
+2022-12-03 14:41:08,489 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:41:08,489 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:41:08,489 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:41:08,489 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:43:45,908 -  nornir.core -     INFO -        run() - Running task 'check_template' with args {} on 4 hosts
+2022-12-03 14:43:45,918 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'nornir.core.inventory.Host object' has no attribute 'ospf'
+
+2022-12-03 14:43:45,919 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'nornir.core.inventory.Host object' has no attribute 'ospf'
+
+2022-12-03 14:43:45,919 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'nornir.core.inventory.Host object' has no attribute 'ospf'
+
+2022-12-03 14:43:45,919 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'nornir.core.inventory.Host object' has no attribute 'ospf'
+
+2022-12-03 14:43:45,919 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:43:45,919 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:43:45,919 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:43:45,919 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:45:28,380 -  nornir.core -     INFO -        run() - Running task 'check_template' with args {} on 4 hosts
+2022-12-03 14:45:28,398 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'data' is undefined
+
+2022-12-03 14:45:28,398 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'data' is undefined
+
+2022-12-03 14:45:28,398 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'data' is undefined
+
+2022-12-03 14:45:28,399 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'data' is undefined
+
+2022-12-03 14:45:28,399 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:45:28,399 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:45:28,399 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:45:28,399 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:45:45,819 -  nornir.core -     INFO -        run() - Running task 'check_template' with args {} on 4 hosts
+2022-12-03 14:45:45,830 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'ospf'
+
+2022-12-03 14:45:45,830 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'ospf'
+
+2022-12-03 14:45:45,830 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:45:45,830 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:45:45,830 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'ospf'
+
+2022-12-03 14:45:45,831 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "templates/ospf.j2", line -1, in top-level template code
+  File "/home/quandm/.local/lib/python3.10/site-packages/jinja2/environment.py", line 452, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'ospf'
+
+2022-12-03 14:45:45,831 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:45:45,831 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 12, in check_template
+    template = task.run(task=template_file, template="ospf.j2",path="templates")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2022-12-03 14:47:17,665 -  nornir.core -     INFO -        run() - Running task 'check_template' with args {} on 4 hosts
+2022-12-03 14:47:19,012 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 17, in check_template
+    task.run (task=send_configs,configs=configuration)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2022-12-03 14:47:19,154 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 17, in check_template
+    task.run (task=send_configs,configs=configuration)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2022-12-03 14:47:19,344 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 17, in check_template
+    task.run (task=send_configs,configs=configuration)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2022-12-03 14:47:19,415 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'check_template' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/04.Template_Jinja2/04.Nornir_jinja.py", line 17, in check_template
+    task.run (task=send_configs,configs=configuration)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2022-12-03 14:50:04,077 -  nornir.core -     INFO -        run() - Running task 'check_template' with args {} on 4 hosts

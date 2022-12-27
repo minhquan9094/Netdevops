@@ -1,0 +1,7 @@
+
+ip route 0.0.0.0 0.0.0.0 {{host["_gw"]}}
+
+interface GigabitEthernet0/0
+ip address {{ host["_ip"]}} {{ host["_mask"]}}
+exit
+

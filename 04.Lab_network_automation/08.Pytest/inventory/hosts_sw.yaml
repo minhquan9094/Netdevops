@@ -1,0 +1,51 @@
+---
+SW1:
+    hostname: 192.168.130.21
+    groups:
+        - cisco_group
+    data:
+        role: "office"
+        type: "switch"
+        vlans:
+            - id: 230
+              name: "Lab"
+              numif: 7
+            
+            
+
+SW2:
+    hostname: 192.168.130.22
+    groups:
+        - cisco_group
+    data:
+        role: "office"
+        type: "switch"
+        vlans:
+            - id: 230
+              name: "Lab"
+              numif: 7
+
+SW3:
+    hostname: 192.168.130.23
+    groups:
+        - cisco_group
+    data:
+        role: "MFG"
+        type: "switch"
+        vlans:
+            - id: 230
+              name: "Lab"
+              numif: 7
+
+SW4:
+    hostname: 192.168.130.24
+    groups:
+        - cisco_group
+    data:
+        role: "MFG"
+        type: "switch"
+        vlans:
+            - id: 230
+              name: "Lab"
+              numif: 7
+              

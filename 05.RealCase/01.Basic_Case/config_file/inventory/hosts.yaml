@@ -1,0 +1,51 @@
+---
+R1:
+    hostname: 192.168.130.13
+    groups:
+        - cisco_group
+    data: 
+        _hostname: R1
+        _ip: 192.168.130.13
+        _mask: 255.255.255.0
+        _gw: 192.168.130.254
+        storeID: LAB001
+        city: HCM
+        firewall: T
+
+R2:
+    hostname: 192.168.130.10
+    groups:
+        - cisco_group
+
+    data: 
+        _hostname: R2
+        _ip: 192.168.130.10
+        _mask: 255.255.255.0
+        _gw: 192.168.130.254
+
+        storeID: LAB002
+        city: HN
+        firewall: T
+R3:
+    hostname: 192.168.130.11
+    groups:
+        - cisco_group
+    data:
+        _hostname: R3
+        _ip: 192.168.130.11
+        _mask: 255.255.255.0
+        _gw: 192.168.130.254
+        storeID: LAB001
+        city: HCM
+
+R4:
+    hostname: 192.168.130.12
+    groups:
+        - cisco_group
+    data: 
+        _hostname: R4
+        _ip: 192.168.130.12
+        _mask: 255.255.255.0
+        _gw: 192.168.130.254
+        storeID: LAB004
+        city: DN

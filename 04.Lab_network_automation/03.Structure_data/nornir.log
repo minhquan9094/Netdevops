@@ -1,0 +1,316 @@
+2022-11-24 18:15:18,538 -  nornir.core -     INFO -        run() - Running task 'pull_structure_data' with args {} on 4 hosts
+2022-11-24 18:15:19,600 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["fact"] = output_result.scapli_response.genue_parse_output()
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 255, in __getattr__
+    return getattr(self[0], name)
+AttributeError: 'ScrapliResult' object has no attribute 'scapli_response'
+
+2022-11-24 18:15:19,614 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["fact"] = output_result.scapli_response.genue_parse_output()
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 255, in __getattr__
+    return getattr(self[0], name)
+AttributeError: 'ScrapliResult' object has no attribute 'scapli_response'
+
+2022-11-24 18:15:19,628 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["fact"] = output_result.scapli_response.genue_parse_output()
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 255, in __getattr__
+    return getattr(self[0], name)
+AttributeError: 'ScrapliResult' object has no attribute 'scapli_response'
+
+2022-11-24 18:15:33,581 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_command.py", line 36, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/connection.py", line 105, in open
+    connection.open()
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/base/sync_driver.py", line 88, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 113, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/channel/sync_channel.py", line 290, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/channel/base_channel.py", line 432, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Timed out connecting to host
+
+2022-11-24 18:15:33,582 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 9, in pull_structure_data
+    output_result= task.run(task=send_command, command="show version")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2022-11-24 18:17:56,743 -  nornir.core -     INFO -        run() - Running task 'pull_structure_data' with args {} on 4 hosts
+2022-11-24 18:17:57,478 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["fact"] = output_result.scapli_response.genue_parse_output()
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 255, in __getattr__
+    return getattr(self[0], name)
+AttributeError: 'ScrapliResult' object has no attribute 'scapli_response'
+
+2022-11-24 18:17:57,648 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["fact"] = output_result.scapli_response.genue_parse_output()
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 255, in __getattr__
+    return getattr(self[0], name)
+AttributeError: 'ScrapliResult' object has no attribute 'scapli_response'
+
+2022-11-24 18:17:57,685 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["fact"] = output_result.scapli_response.genue_parse_output()
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 255, in __getattr__
+    return getattr(self[0], name)
+AttributeError: 'ScrapliResult' object has no attribute 'scapli_response'
+
+2022-11-24 18:18:11,781 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_command.py", line 36, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/connection.py", line 105, in open
+    connection.open()
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/base/sync_driver.py", line 88, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 113, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/channel/sync_channel.py", line 290, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/channel/base_channel.py", line 432, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Timed out connecting to host
+
+2022-11-24 18:18:11,781 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 9, in pull_structure_data
+    output_result= task.run(task=send_command, command="show version")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2022-11-24 18:19:17,486 -  nornir.core -     INFO -        run() - Running task 'pull_structure_data' with args {} on 4 hosts
+2022-11-24 18:19:18,185 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["facts"] = output_result.scrapli_response.genue_parse_output()
+AttributeError: 'Response' object has no attribute 'genue_parse_output'
+
+2022-11-24 18:19:18,421 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["facts"] = output_result.scrapli_response.genue_parse_output()
+AttributeError: 'Response' object has no attribute 'genue_parse_output'
+
+2022-11-24 18:19:18,434 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["facts"] = output_result.scrapli_response.genue_parse_output()
+AttributeError: 'Response' object has no attribute 'genue_parse_output'
+
+2022-11-24 18:19:39,185 -  nornir.core -     INFO -        run() - Running task 'pull_structure_data' with args {} on 4 hosts
+2022-11-24 18:19:39,501 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_command.py", line 36, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/connection.py", line 105, in open
+    connection.open()
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/base/sync_driver.py", line 88, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 113, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/channel/sync_channel.py", line 290, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/channel/base_channel.py", line 432, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2022-11-24 18:19:39,502 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 9, in pull_structure_data
+    output_result= task.run(task=send_command, command="show version")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2022-11-24 18:19:39,921 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["facts"] = output_result.scrapli_response.genue_parse_output()
+AttributeError: 'Response' object has no attribute 'genue_parse_output'
+
+2022-11-24 18:19:40,093 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["facts"] = output_result.scrapli_response.genue_parse_output()
+AttributeError: 'Response' object has no attribute 'genue_parse_output'
+
+2022-11-24 18:19:40,101 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["facts"] = output_result.scrapli_response.genue_parse_output()
+AttributeError: 'Response' object has no attribute 'genue_parse_output'
+
+2022-11-24 18:20:33,834 -  nornir.core -     INFO -        run() - Running task 'pull_structure_data' with args {} on 4 hosts
+2022-11-24 18:20:34,605 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["facts"] = output_result.scrapli_response.genue_parse_output()
+AttributeError: 'Response' object has no attribute 'genue_parse_output'
+
+2022-11-24 18:20:34,841 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["facts"] = output_result.scrapli_response.genue_parse_output()
+AttributeError: 'Response' object has no attribute 'genue_parse_output'
+
+2022-11-24 18:20:34,898 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["facts"] = output_result.scrapli_response.genue_parse_output()
+AttributeError: 'Response' object has no attribute 'genue_parse_output'
+
+2022-11-24 18:20:34,899 - nornir.core.taskgenue_parse_output -    ERROR -      start() - Host 'vIOS5': task 'pull_structure_data' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/IPDB_object.py", line 10, in pull_structure_data
+    task.host["facts"] = output_result.scrapli_response.genue_parse_output()
+AttributeError: 'Response' object has no attribute ''
+
+2022-11-27 10:54:59,648 -  nornir.core -     INFO -        run() - Running task 'auto_description_interface_cdpinfor' with args {} on 4 hosts
+2022-11-27 10:59:35,121 -  nornir.core -     INFO -        run() - Running task 'auto_description_interface_cdpinfor' with args {} on 4 hosts
+2022-11-27 11:01:20,234 -  nornir.core -     INFO -        run() - Running task 'save_config' with args {} on 4 hosts
+2022-11-27 11:01:21,138 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'save_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/practice_auto_descript.py", line 20, in save_config
+    results = task.run(task=send_config,config="wr")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-27 11:01:21,265 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'save_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/practice_auto_descript.py", line 20, in save_config
+    results = task.run(task=send_config,config="wr")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-27 11:01:21,388 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'save_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/practice_auto_descript.py", line 20, in save_config
+    results = task.run(task=send_config,config="wr")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-27 11:01:21,438 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'save_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/03.Structure_data/practice_auto_descript.py", line 20, in save_config
+    results = task.run(task=send_config,config="wr")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-27 11:01:40,649 -  nornir.core -     INFO -        run() - Running task 'save_config' with args {} on 4 hosts

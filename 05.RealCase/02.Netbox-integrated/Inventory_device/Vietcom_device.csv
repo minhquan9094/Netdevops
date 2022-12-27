@@ -1,0 +1,4 @@
+name,device_role,manufacturer,device_type,status,site,rack,serial
+CoreSW01,Core Switch,Cisco,2960X,active,Vietcom-Office,HQ-RACK-01,FDO2021E1HB
+CoreSW02,Core Switch,Cisco,2960X,active,Vietcom-Office,HQ-RACK-01,FDO2027E1AC
+FW-HQ-01,Firewall-External,Fortinet,FG-100E,active,Vietcom-Office,FDO2027E1AC

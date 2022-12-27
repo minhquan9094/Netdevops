@@ -1,0 +1,66 @@
+2022-11-10 17:28:28,023 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 1 hosts
+2022-11-10 17:30:50,503 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 1 hosts
+2022-11-10 17:42:42,740 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 1 hosts
+2022-11-10 17:42:42,777 - nornir.core.task -    ERROR -      start() - Host 'rtr1': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_command.py", line 36, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/connection.py", line 105, in open
+    connection.open()
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/base/sync_driver.py", line 88, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 113, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/channel/sync_channel.py", line 290, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/channel/base_channel.py", line 432, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2022-11-10 17:43:17,530 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 1 hosts
+2022-11-10 17:43:17,594 - nornir.core.task -    ERROR -      start() - Host 'rtr1': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_command.py", line 36, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/connection.py", line 105, in open
+    connection.open()
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/base/sync_driver.py", line 88, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 113, in _multiprocessing_timeout
+    return future.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/channel/sync_channel.py", line 290, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/channel/base_channel.py", line 432, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2022-11-10 17:44:46,026 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 1 hosts
+2022-11-10 17:45:28,502 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 1 hosts

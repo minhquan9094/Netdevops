@@ -1,0 +1,3 @@
+No,hostname,IP,OS,Method
+1,coresw,172.16.107.10,cisco,ssh
+2,R1,172.16.107.132,cisco,ssh

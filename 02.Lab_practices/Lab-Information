@@ -1,0 +1,49 @@
+bit.ly/3zmNrok
+
+
+enable password quandm
+hostname CSW02-Prod
+
+username quandm privilege 15 password quandm
+ip domain name quandm
+
+crypto key gene rsa
+1024
+
+ip ssh version 2
+line vty 0 4
+ login local
+ transport input ssh
+ exit
+
+interface GigabitEthernet0/3
+ no switchport
+ ip address 172.16.107.153 255.255.255.0
+ no shut
+ end
+
+wr
+
+
+enable password quandm
+hostname Store-Prod
+
+username quandm privilege 15 password quandm
+ip domain name quandm
+
+crypto key gene rsa
+1024
+
+ip ssh version 2
+line vty 0 4
+ login local
+ transport input ssh
+ exit
+
+interface GigabitEthernet0/0
+ ip address 172.16.107.149 255.255.255.0
+ no shut
+ end
+
+wr
+

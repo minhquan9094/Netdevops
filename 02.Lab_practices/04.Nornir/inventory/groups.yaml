@@ -1,0 +1,6 @@
+---
+dev_group:
+    platform: 'ios'
+
+prod_group:
+    platform: 'ios'

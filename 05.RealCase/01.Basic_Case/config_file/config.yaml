@@ -1,0 +1,13 @@
+---
+
+inventory:
+    plugin: SimpleInventory
+    options:
+        host_file: "/home/quandm/DATA/Git/netdevops/05.RealCase/01.Basic_Case/config_file/inventory/hosts.yaml"
+        group_file: "/home/quandm/DATA/Git/netdevops/05.RealCase/01.Basic_Case/config_file/inventory/groups.yaml"
+        defaults_file: "/home/quandm/DATA/Git/netdevops/05.RealCase/01.Basic_Case/config_file/inventory/defaults.yaml"
+
+runner:
+    plugin: threaded
+    options:
+        num_workers: 10

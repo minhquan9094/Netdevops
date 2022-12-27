@@ -1,0 +1,942 @@
+2022-11-19 16:56:30,530 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 4 hosts
+2022-11-19 17:14:44,226 -  nornir.core -     INFO -        run() - Running task 'data_block_test' with args {} on 4 hosts
+2022-11-19 17:14:44,228 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 18, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {nr_task.host['ntp_server']}")
+AttributeError: 'Nornir' object has no attribute 'host'
+
+2022-11-19 17:14:44,228 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 18, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {nr_task.host['ntp_server']}")
+AttributeError: 'Nornir' object has no attribute 'host'
+
+2022-11-19 17:14:44,229 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 18, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {nr_task.host['ntp_server']}")
+AttributeError: 'Nornir' object has no attribute 'host'
+
+2022-11-19 17:14:44,229 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 18, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {nr_task.host['ntp_server']}")
+AttributeError: 'Nornir' object has no attribute 'host'
+
+2022-11-19 17:16:06,729 -  nornir.core -     INFO -        run() - Running task 'data_block_test' with args {} on 4 hosts
+2022-11-19 17:16:06,730 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 18, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+KeyError: 'ntp_server'
+
+2022-11-19 17:16:06,731 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 18, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+KeyError: 'ntp_server'
+
+2022-11-19 17:16:06,731 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 18, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+KeyError: 'ntp_server'
+
+2022-11-19 17:16:06,731 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 18, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+KeyError: 'ntp_server'
+
+2022-11-19 17:16:53,697 -  nornir.core -     INFO -        run() - Running task 'data_block_test' with args {} on 4 hosts
+2022-11-19 17:16:53,698 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 19, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+KeyError: 'ntp_server'
+
+2022-11-19 17:16:53,699 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 19, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+KeyError: 'ntp_server'
+
+2022-11-19 17:16:53,702 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 19, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+KeyError: 'ntp_server'
+
+2022-11-19 17:16:53,702 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 19, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/inventory.py", line 350, in __getitem__
+    return self.data[item]
+KeyError: 'ntp_server'
+
+2022-11-19 17:34:27,409 -  nornir.core -     INFO -        run() - Running task 'data_block_test' with args {} on 4 hosts
+2022-11-19 17:34:27,410 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_config() got an unexpected keyword argument 'command'
+
+2022-11-19 17:34:27,410 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_config() got an unexpected keyword argument 'command'
+
+2022-11-19 17:34:27,410 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_config() got an unexpected keyword argument 'command'
+
+2022-11-19 17:34:27,411 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 19, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-19 17:34:27,411 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_config() got an unexpected keyword argument 'command'
+
+2022-11-19 17:34:27,411 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 19, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-19 17:34:27,411 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 19, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-19 17:34:27,412 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 19, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-19 17:34:49,947 -  nornir.core -     INFO -        run() - Running task 'data_block_test' with args {} on 4 hosts
+2022-11-19 17:34:49,947 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_config() got an unexpected keyword argument 'command'
+
+2022-11-19 17:34:49,947 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_config() got an unexpected keyword argument 'command'
+
+2022-11-19 17:34:49,948 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_config() got an unexpected keyword argument 'command'
+
+2022-11-19 17:34:49,948 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 19, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-19 17:34:49,948 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_config() got an unexpected keyword argument 'command'
+
+2022-11-19 17:34:49,948 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 19, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-19 17:34:49,948 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 19, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-19 17:34:49,949 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'data_block_test' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/runbook.py", line 19, in data_block_test
+    results = task.run(task=send_config, command=f"ntp server {task.host['ntp_server']}")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-19 17:35:08,883 -  nornir.core -     INFO -        run() - Running task 'data_block_test' with args {} on 4 hosts
+2022-11-19 20:49:41,288 -  nornir.core -     INFO -        run() - Running task 'send_configs_sample' with args {} on 4 hosts
+2022-11-19 20:52:15,795 -  nornir.core -     INFO -        run() - Running task 'send_configs_sample' with args {} on 4 hosts
+2022-11-19 20:52:25,963 -  nornir.core -     INFO -        run() - Running task 'send_configs_sample' with args {} on 4 hosts
+2022-11-19 20:52:55,793 -  nornir.core -     INFO -        run() - Running task 'send_configs_sample' with args {} on 4 hosts
+2022-11-19 20:54:01,004 -  nornir.core -     INFO -        run() - Running task 'send_configs_sample' with args {} on 4 hosts
+2022-11-19 20:54:18,183 -  nornir.core -     INFO -        run() - Running task 'send_configs_sample' with args {} on 4 hosts
+2022-11-19 20:54:36,791 -  nornir.core -     INFO -        run() - Running task 'send_configs_sample' with args {} on 4 hosts
+2022-11-19 20:54:47,623 -  nornir.core -     INFO -        run() - Running task 'send_configs_sample' with args {} on 4 hosts
+2022-11-19 20:56:57,428 -  nornir.core -     INFO -        run() - Running task 'send_configs_sample' with args {} on 4 hosts
+2022-11-19 20:56:57,429 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_configs() got an unexpected keyword argument 'config'
+
+2022-11-19 20:56:57,429 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_configs() got an unexpected keyword argument 'config'
+
+2022-11-19 20:56:57,429 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_configs() got an unexpected keyword argument 'config'
+
+2022-11-19 20:56:57,429 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'send_configs' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: send_configs() got an unexpected keyword argument 'config'
+
+2022-11-19 20:56:57,430 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_configs_sample' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/nornir_runbook_sample.py", line 49, in send_configs_sample
+    results = task.run(task=send_configs,config=[f"snmp-server community send_single_config", "snmp-server host 192.168.88.1"])
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2022-11-19 20:56:57,430 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'send_configs_sample' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/nornir_runbook_sample.py", line 49, in send_configs_sample
+    results = task.run(task=send_configs,config=[f"snmp-server community send_single_config", "snmp-server host 192.168.88.1"])
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2022-11-19 20:56:57,430 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'send_configs_sample' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/nornir_runbook_sample.py", line 49, in send_configs_sample
+    results = task.run(task=send_configs,config=[f"snmp-server community send_single_config", "snmp-server host 192.168.88.1"])
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2022-11-19 20:56:57,430 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'send_configs_sample' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/nornir_runbook_sample.py", line 49, in send_configs_sample
+    results = task.run(task=send_configs,config=[f"snmp-server community send_single_config", "snmp-server host 192.168.88.1"])
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2022-11-19 20:57:23,229 -  nornir.core -     INFO -        run() - Running task 'send_configs_sample' with args {} on 4 hosts
+2022-11-19 20:57:25,168 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'send_configs_sample' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/nornir_runbook_sample.py", line 49, in send_configs_sample
+    results = task.run(task=send_configs,configs=[f"snmp-server community send_single_config", "snmp-server host 192.168.88.1"])
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2022-11-19 20:57:25,175 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'send_configs_sample' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/nornir_runbook_sample.py", line 49, in send_configs_sample
+    results = task.run(task=send_configs,configs=[f"snmp-server community send_single_config", "snmp-server host 192.168.88.1"])
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2022-11-19 20:57:25,428 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_configs_sample' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/nornir_runbook_sample.py", line 49, in send_configs_sample
+    results = task.run(task=send_configs,configs=[f"snmp-server community send_single_config", "snmp-server host 192.168.88.1"])
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2022-11-19 20:57:25,860 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'send_configs_sample' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/nornir_runbook_sample.py", line 49, in send_configs_sample
+    results = task.run(task=send_configs,configs=[f"snmp-server community send_single_config", "snmp-server host 192.168.88.1"])
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_configs (failed)
+
+
+2022-11-19 21:00:49,137 -  nornir.core -     INFO -        run() - Running task 'send_configs_sample' with args {} on 4 hosts
+2022-11-19 21:03:24,334 -  nornir.core -     INFO -        run() - Running task 'send_configs_fromfile_sample' with args {} on 4 hosts
+2022-11-19 21:03:51,894 -  nornir.core -     INFO -        run() - Running task 'send_configs_fromfile_sample' with args {} on 4 hosts
+2022-11-19 22:10:09,412 -  nornir.core -     INFO -        run() - Running task 'backup_config_flash' with args {} on 4 hosts
+2022-11-19 22:10:40,433 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:10:40,434 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:10:40,452 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:10:40,453 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:10:40,572 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:10:40,573 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:10:40,608 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:10:40,609 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:12:30,061 -  nornir.core -     INFO -        run() - Running task 'backup_config_flash' with args {} on 4 hosts
+2022-11-19 22:13:01,468 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:13:01,469 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:13:01,470 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:13:01,470 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:13:01,507 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:13:01,507 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:13:01,917 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:13:01,918 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:13:21,661 -  nornir.core -     INFO -        run() - Running task 'send_configs_fromfile_sample' with args {} on 4 hosts
+2022-11-19 22:13:32,846 -  nornir.core -     INFO -        run() - Running task 'backup_config_flash' with args {} on 4 hosts
+2022-11-19 22:14:06,290 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:14:06,292 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:14:06,293 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:14:06,294 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:14:06,295 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:14:06,296 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:14:06,297 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:14:06,298 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:14:54,992 -  nornir.core -     INFO -        run() - Running task 'backup_config_flash' with args {} on 4 hosts
+2022-11-19 22:15:26,372 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:15:26,373 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:15:26,402 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:15:26,402 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:15:26,485 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:15:26,485 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:15:26,486 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'send_interactive' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir_scrapli/tasks/core/send_interactive.py", line 80, in send_interactive
+    scrapli_response = scrapli_conn.send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/network/sync_driver.py", line 440, in send_interactive
+    response: Response = super().send_interactive(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 297, in decorate
+    result = wrapped_func(*args, **kwargs)
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/driver/generic/sync_driver.py", line 438, in send_interactive
+    raw_response, processed_response = self.channel.send_inputs_interact(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 108, in _multiprocessing_timeout
+    return _handle_timeout(
+  File "/home/quandm/.local/lib/python3.10/site-packages/scrapli/decorators.py", line 134, in _handle_timeout
+    raise ScrapliTimeout(message)
+scrapli.exceptions.ScrapliTimeout: timed out sending interactive input to device
+
+2022-11-19 22:15:26,487 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'backup_config_flash' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/02.nornir_rollback_sample.py", line 15, in backup_config_flash
+    task.run(task=send_interactive, interact_events=cmds)
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_interactive (failed)
+
+
+2022-11-19 22:16:09,965 -  nornir.core -     INFO -        run() - Running task 'backup_config_flash' with args {} on 4 hosts
+2022-11-19 22:20:22,996 -  nornir.core -     INFO -        run() - Running task 'send_configs_fromfile_sample' with args {} on 4 hosts
+2022-11-19 22:21:56,448 -  nornir.core -     INFO -        run() - Running task 'rollback_config_from_flash' with args {} on 4 hosts
+2022-11-20 08:31:39,636 -  nornir.core -     INFO -        run() - Running task 'send_config_sample' with args {} on 4 hosts
+2022-11-20 08:31:40,735 - nornir.core.task -    ERROR -      start() - Host 'vIOS5': task 'send_config_sample' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/03.ManageCredential_sample.py", line 13, in send_config_sample
+    results = task.run(task=send_config,config=f"show ip int br")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-20 08:31:40,764 - nornir.core.task -    ERROR -      start() - Host 'vIOS4': task 'send_config_sample' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/03.ManageCredential_sample.py", line 13, in send_config_sample
+    results = task.run(task=send_config,config=f"show ip int br")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-20 08:31:40,775 - nornir.core.task -    ERROR -      start() - Host 'vIOS3': task 'send_config_sample' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/03.ManageCredential_sample.py", line 13, in send_config_sample
+    results = task.run(task=send_config,config=f"show ip int br")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-20 08:31:40,887 - nornir.core.task -    ERROR -      start() - Host 'vIOS2': task 'send_config_sample' failed with traceback:
+Traceback (most recent call last):
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/02. Nornir_Automation_Architecture/03.ManageCredential_sample.py", line 13, in send_config_sample
+    results = task.run(task=send_config,config=f"show ip int br")
+  File "/home/quandm/.local/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2022-11-20 08:32:27,871 -  nornir.core -     INFO -        run() - Running task 'send_command_sample' with args {} on 4 hosts
+2022-12-05 15:13:41,104 -  nornir.core -     INFO -        run() - Running task '_config_deploy' with args {} on 1 hosts
+2022-12-05 15:16:24,522 -  nornir.core -     INFO -        run() - Running task '_config_deploy' with args {} on 1 hosts
+2022-12-05 15:18:56,976 -  nornir.core -     INFO -        run() - Running task '_config_deploy' with args {} on 2 hosts
+2022-12-05 15:31:27,043 -  nornir.core -  WARNING -        run() - Task '_config_deploy' has not been run – 0 hosts selected
+2022-12-05 15:31:43,798 -  nornir.core -  WARNING -        run() - Task '_config_deploy' has not been run – 0 hosts selected
+2022-12-05 15:32:47,170 -  nornir.core -  WARNING -        run() - Task '_config_deploy' has not been run – 0 hosts selected
+2022-12-05 15:33:42,229 -  nornir.core -     INFO -        run() - Running task '_config_deploy' with args {} on 2 hosts
+2022-12-05 15:34:14,229 -  nornir.core -  WARNING -        run() - Task '_config_deploy' has not been run – 0 hosts selected
+2022-12-05 15:34:41,333 -  nornir.core -     INFO -        run() - Running task '_config_deploy' with args {} on 2 hosts
+2022-12-05 15:35:03,581 -  nornir.core -     INFO -        run() - Running task '_config_deploy' with args {} on 1 hosts
+2022-12-05 15:35:23,886 -  nornir.core -     INFO -        run() - Running task '_config_deploy' with args {} on 2 hosts
+2022-12-05 15:36:09,138 -  nornir.core -     INFO -        run() - Running task '_config_deploy' with args {} on 2 hosts

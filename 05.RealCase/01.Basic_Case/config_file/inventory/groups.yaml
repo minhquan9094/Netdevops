@@ -1,0 +1,9 @@
+---
+cisco_group:
+    platform: 'ios'
+    data:
+        ntp_server: "1.1.1.1"
+        ospf_process: "1"
+
+prod_group:
+    platform: 'ios'

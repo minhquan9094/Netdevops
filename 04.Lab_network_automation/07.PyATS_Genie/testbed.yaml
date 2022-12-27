@@ -1,0 +1,14 @@
+devices:
+  vIOS2:
+    type: router
+    os: ios
+    credentials:
+      default:
+        username: quandm
+        password: quandm
+    connections:
+      mgmt:
+        protocol: ssh
+        ip: 192.168.130.10
+        port: 22
+        ssh_options: -o KexAlgorithms=+diffie-hellman-group-exchange-sha1 -c aes256-ctr

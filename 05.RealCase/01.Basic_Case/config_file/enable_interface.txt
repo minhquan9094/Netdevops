@@ -1,0 +1,2 @@
+interface range g0/0-3
+no shut

@@ -1,0 +1,25 @@
+hostname vIOS5
+no ip domain-lookup
+ip domain-name quandm
+username quandm pri 15 pass quandm
+interface GigabitEthernet0/0
+ description MGNT
+ ip address dhcp
+ no shut
+ exit
+
+line vty 0 4
+ login local
+ transport input ssh
+ exit
+
+crypto key generate rsa
+1024
+
+ip ssh ver 2
+
+
+
+
+
+

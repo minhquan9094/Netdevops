@@ -1,0 +1,17 @@
+---
+
+inventory:
+    plugin: SimpleInventory
+    options:
+        host_file: "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/08.Pytest/inventory/hosts_sw.yaml"
+        group_file: "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/08.Pytest/inventory/groups.yaml"
+        defaults_file: "/home/quandm/DATA/Git/netdevops/04.Lab_network_automation/08.Pytest/inventory/defaults.yaml"
+
+runner:
+    plugin: threaded
+    options:
+        num_workers: 5
+
+
+logging:
+    enabled: False

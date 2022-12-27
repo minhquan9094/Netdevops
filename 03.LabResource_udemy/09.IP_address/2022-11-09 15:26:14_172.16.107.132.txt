@@ -1,0 +1,14 @@
+
+R1#terminal len 0
+R1#show ip interface brief
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0/0                172.16.107.132  YES DHCP   up                    up      
+Ethernet0/1                unassigned      YES DHCP   up                    up      
+Ethernet0/2                unassigned      YES NVRAM  administratively down down    
+Ethernet0/3                unassigned      YES NVRAM  administratively down down    
+Ethernet1/0                unassigned      YES NVRAM  administratively down down    
+Ethernet1/1                unassigned      YES NVRAM  administratively down down    
+Ethernet1/2                unassigned      YES NVRAM  administratively down down    
+Ethernet1/3                unassigned      YES NVRAM  administratively down down    
+Loopback1001               1.1.1.1         YES manual up                    up      
+R1#

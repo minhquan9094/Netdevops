@@ -1,0 +1,50 @@
+---
+vIOS4:
+    hostname: 192.168.130.13
+    groups:
+        - cisco_group
+    data:
+        ospf:
+            ospf_rid: 192.168.130.13
+            ospf_process: "1"
+            ospf_networks:
+                ip: "192.168.130.0"
+                wild_card: "255.255.255.0"
+                area: "0"
+
+vIOS2:
+    hostname: 192.168.130.10
+    groups:
+        - cisco_group
+    data:
+        ospf:
+            ospf_rid: 192.168.130.10
+            ospf_process: "1"
+            ospf_networks:
+                ip: "192.168.130.0"
+                wild_card: "255.255.255.0"
+                area: "0"
+vIOS3:
+    hostname: 192.168.130.11
+    groups:
+        - cisco_group
+    data:
+        ospf:
+            ospf_rid: 192.168.130.11
+            ospf_process: "1"
+            ospf_networks:
+                ip: "192.168.130.0"
+                wild_card: "255.255.255.0"
+                area: "0"
+vIOS5:
+    hostname: 192.168.130.12
+    groups:
+        - cisco_group
+    data:
+        ospf:
+            ospf_rid: 192.168.130.12
+            ospf_process: "1"
+            ospf_networks:
+                ip: "192.168.130.0"
+                wild_card: "255.255.255.0"
+                area: "0"
